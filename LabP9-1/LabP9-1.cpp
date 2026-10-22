@@ -9,12 +9,12 @@ int countVowel(string str);
 
 int main() {
     string str;
-
-    cout << "Enter a string: ";
-    getline(cin, str);
-
-    cout << "Number of vowels: " << countVowel(str) << endl;
-
+    while (true) {
+        cout << "Enter a string or Q to quit: ";
+        getline(cin, str);
+        if (str == "Q") break;
+        cout << "Number of vowels: " << countVowel(str) << endl;
+    }
     return 0;
 }
 
